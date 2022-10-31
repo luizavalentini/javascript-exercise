@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework1-javascript</title>
+  </head>
+  <body>
+    <h1 id="soma"></h1>
+    <script>
+      let pergunta = prompt("Digite Sim ou Não: ");
+      let sim = verificaSeSim(pergunta);
+
+      function verificaSeSim() {
+        if (pergunta == "sim") {
+          return alert("Parabéns!");
+        } else if (pergunta == "nao") {
+          prompt("Digite Apenas Sim ou Não:");
+        } else {
+          prompt("Você tem noções dos seus atos?");
+        }
+        document.write(pergunta);
+      }
+    </script>
+  </body>
+</html>

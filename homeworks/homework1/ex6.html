@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework1-javascript</title>
+  </head>
+  <body>
+    <h1 id="bissexto"></h1>
+    <script>
+        let ano = prompt('Digte um ano');
+        let resultado = bissexto(ano);
+
+         document.getElementById('bissexto').innerHTML = "O ano digitado é bissexto: " + resultado;
+
+      function bissexto(ano) {
+         return (ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0;
+      }
+    </script>
+  </body>
+</html>

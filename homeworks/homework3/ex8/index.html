@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework3-javascript</title>
+</head>
+<body>
+<script>
+let salario = 1000;
+let hoje = new Date();
+let ano = hoje.getFullYear();
+let anoInicial = 2013;
+let valorAcresimo = 2017;
+
+while (anoInicial < valorAcresimo) {
+    alert(`Em ${ anoInicial} o salário foi de: R$${salario.toFixed(2)} com aumento de 1,5%.`)
+    salario = salario + parseFloat(salario / 100 * 1.5)
+    anoInicial++;
+}
+while (ano >= valorAcresimo) {
+    alert(`Em ${valorAcresimo} o salário foi de: R$${salario.toFixed(2)} com aumento de 3%.`)
+    salario = salario + parseFloat(salario / 100 * 3)
+    valorAcresimo++; 
+}
+let percentualfinal = ((1230/1000 - 1) * 100)+'%';
+
+alert(`E por fim o aumento percentual total foi de: ${percentualfinal}`);
+</script>
+</body>
+</html>

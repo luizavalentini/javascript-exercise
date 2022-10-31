@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>homework1-javascript</title>
+  </head>
+  <body>
+    <h1 id="soma"></h1>
+    <script>
+           
+        let num1 = Number(window.prompt('Digite um número: '))
+        let num2 = Number(window.prompt('Digite outro número: '))
+        let operacao = prompt('Digite a operacao desejada: (+,-,* ou /)');
+        let resultado = resolvendo(num1,num2);
+      
+        document.getElementById('soma').innerHTML = "O resultado da operação escolhida é: " + resultado;
+
+       function resolvendo(a,b){
+        if(operacao == '+'){
+            return a+b;
+        }
+        else if(operacao == "-"){
+            return a - b ;
+        }
+        else if(operacao == "*"){
+            return a * b ;
+        }
+        else if(operacao == "/"){
+            return a / b ;
+        }
+       }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework3-javascript</title>
+  </head>
+  <body>
+    <script>
+      var counter = 0;
+      var timer = setInterval(function () {
+        if (counter >= 60) {
+          clearInterval(timer);
+        }
+        console.log(counter++);
+      }, 1000);
+    </script>
+  </body>
+</html>

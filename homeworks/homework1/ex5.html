@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>homework1-javascript</title>
+  </head>
+  <body>
+    <h1 id="soma"></h1>
+    <script>
+           
+        let segundos = prompt('Digite um numero em segundos');
+        let  horas = converteHoras(segundos);
+        let  min = converteminutos(segundos);
+        let  seg = convertesegundos(segundos);
+
+        document.getElementById('soma').innerHTML = horas + ' horas ' +  min + ' minutos ' +  seg + ' segundos ';
+
+       
+        function converteHoras(segundos){
+            return (segundos / 3600);
+        }
+     
+        function converteminutos(segundos){
+            return (segundos-(converteHoras*3600)) /60;
+        }
+
+        function convertesegundos(segundos){
+            return (segundos%60);
+        }
+  
+    </script>
+  </body>
+</html>

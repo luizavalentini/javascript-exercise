@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework3-javascript</title>
+  </head>
+  <body>
+    <script>
+      function funcao1() {
+        var x;
+        var r = prompt("Digite 1 para fazer Cheking ou digite 2 para fazer Checkout ou digite 3 para estender sua estadia ou digite 4 para sair");
+        if (r == '1') {
+           alert("Seja Bem-Vindo(a)!");
+        }else{
+            if (r == '2') {
+          pergunta = prompt("Você tem certeza que deseja fazer checkout?");
+          if(pergunta == 'sim'){
+         alert("Certo, até mais!");
+          }
+        }else{
+              if (r == '3') {
+          pergunta = prompt("Quantos dias você quer estender a sua estadia? Digite apenas o número");
+          if(pergunta>0){
+            alert(
+            "A hospedagem foi estendida em: " + pergunta + " dias ,com sucesso!"
+          );
+          } else{
+             alert("indisponivel");
+          }
+        }
+        }
+        if(r == '4'){
+            alert('Ok!');
+        }
+        }
+      }
+    </script>
+    <input type="button" onclick="funcao1()" value="Clique aqui para exibir as opções" />
+  </body>
+</html>

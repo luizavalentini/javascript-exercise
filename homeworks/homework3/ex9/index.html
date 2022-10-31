@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework3-javascript</title>
+  </head>
+  <body>
+    <script>
+      var cache = new Array();
+      (cache[0] = 0), (cache[1] = 1);
+      let fibo = (n) => {
+        if (typeof cache[n] == "undefined")
+          cache[n] = fibo(n - 1) + fibo(n - 2);
+        return cache[n];
+      };
+      fibo(19);
+      alert("Os primeiros 20 números da série fibonacci são: " + cache);
+    </script>
+  </body>
+</html>

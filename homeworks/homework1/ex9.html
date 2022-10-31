@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>homework1-javascript</title>
+  </head>
+  <body>
+    <h1 id="subtracao"></h1>
+    <h1 id="subtracao2"></h1>
+    <h1 id="concatenacao"></h1>
+    <script>
+
+              let carlos = 18;
+              let ana = 15;
+              let irmaLuiza=23;
+              let luiza = 20;
+              let subtracao = subtracaoCarlosEAna(carlos,ana);
+              let subtracao2 = subtracaoLuizaEIrmaLuiza(irmaLuiza,luiza);
+              let concatenacao = concatenacaoIdades(subtracao,subtracao2)
+              document.getElementById('subtracao').innerHTML = "A nossa diferença de idade é " + subtracao + " anos";
+              document.getElementById('subtracao2').innerHTML = "A minha diferença de idade com a minha irma é de" + subtracao2 + " anos";
+              document.getElementById('concatenacao').innerHTML = "A concatenacao das idades é " + concatenacao  + " anos";
+
+             function subtracaoCarlosEAna(a,b){
+                 return a-b;
+             }
+             function subtracaoLuizaEIrmaLuiza(a,b){
+                return a-b;
+             }
+
+             function concatenacaoIdades(a, b){
+                return a+b;
+             }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="calculator">
+            <p class="resultadoFinal" id="resultado" >  </p>
+            <table>
+                <tr>
+                    <td><button class="button-calculator apaga" style="width: 106px;" onclick= "clean()" > ac </button> </td>   
+                    <td><button class="button-calculator neg" onclick= "espapagao()" > <i class="fas fa-espapagao"></i> </button> </td>     
+                    <td><button class="button-calculator especial" onclick= "insere('/')"> <i class="fas fa-divide"></i> </button> </td>     
+                </tr>
+                <tr>
+                    <td><button class="button-calculator " onclick= "insere('7')" > 7 </button> </td>     
+                    <td><button class="button-calculator "  onclick= "insere('8')"> 8 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('9')"> 9 </button> </td>     
+                    <td><button class="button-calculator especial" onclick= "insere('*')" > x </button> </td>     
+                </tr>
+                <tr>
+                    <td><button class="button-calculator " onclick= "insere('4')" > 4 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('5')" > 5 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('6')"> 6 </button> </td>     
+                    <td><button class="button-calculator especial" onclick= "insere('-')" > - </button> </td>     
+                </tr>
+                <tr>
+                    <td><button class="button-calculator " onclick= "insere('1')" > 1 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('2')" > 2 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('3')"> 3 </button> </td>     
+                    <td><button class="button-calculator especial" onclick= "insere('+')"> + </button> </td>     
+                </tr>
+                <tr>
+                    <td><button class="button-calculator " onclick= "insere('0')" > 0 </button> </td>     
+                    <td><button class="button-calculator " onclick= "insere('.')" > . </button> </td>          
+                    <td><button class="button-calculator igual" style="width: 106px;" onclick= "confirma()"> = </button> </td>     
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <script src="./script.js"></script>
+</body>
+</html>
