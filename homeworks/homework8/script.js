@@ -1,8 +1,6 @@
-function yourActivity(){
-    fetch('http://www.boredapi.com/api/activity/')
- .then(res => res.json())
- .then(data => {
-   document.getElementById('atividade').innerText = data.activity;
-   console.log(data);
- })
+const yourActivity = async () => {
+  const response = await fetch(`http://www.boredapi.com/api/activity/`)
+  const data = await response.json()
+  console.log(data);
+  document.getElementById('atividade').innerText = data.activity;
  }
