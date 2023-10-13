@@ -1,1 +1,1 @@
-# vemser-frontend-javascript
+# javascript-exercise
